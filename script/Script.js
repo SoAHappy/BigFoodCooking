@@ -1,11 +1,11 @@
-var $conteudoGeral = document.querySelector(".conteudo-geral");
+var $conteudoGeral = document.querySelector(".contenido-genr");
 var $conteudoEmArray = [].slice.call(document.querySelectorAll(".componente"));
 var $botoesDeFechar = [].slice.call(
   document.querySelectorAll(".componente-botao-fechar")
 );
 
 setTimeout(function () {
-  $conteudoGeral.classList.remove("js-conteudo-geral");
+  $conteudoGeral.classList.remove("js-contenido-genr");
 }, 200);
 
 $conteudoEmArray.forEach(function ($componente) {
