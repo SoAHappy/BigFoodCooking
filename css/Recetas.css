@@ -11,13 +11,13 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-.contenido-genr {
+.conteudo-geral {
   position: relative;
   overflow: hidden;
   height: 100vh;
   padding: 80px 70px;
 }
-.componente-interno-genr {
+.componente-interno-geral {
   position: relative;
   height: 100%;
 }
@@ -122,7 +122,7 @@ body {
   transition: all 0.5s;
 }
 .componente-titulo {
-  color: #fff;
+  color: #62baf9;
   text-transform: uppercase;
   font-size: 20px;
 }
@@ -147,6 +147,13 @@ body {
 .componente-text {
   text-transform: uppercase;
   font-size: 40px;
+  color: #fff;
+}
+
+
+.componente-texto {
+  text-transform: lowercase;
+  font-size: 15px;
   color: #fff;
 }
 .componente-botao-fechar {
@@ -250,7 +257,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  color: #fff;
+  color: #62baf9;
   transform: translate3d(0, -100%, 0);
   transition: transform 0.5s 0.1s;
 }
@@ -278,7 +285,7 @@ body {
 }
 .componente:nth-child(1) .componente-fundo-imagem:before {
   transition-delay: 0s;
-  background-image: url("../img/PolloMArcos.jpg");
+  background-image: url("../img/cochinita.jpg");
 }
 .componente:nth-child(2) {
   transform: translate3d(105.2083333333%, 0, 0);
@@ -295,7 +302,7 @@ body {
 }
 .componente:nth-child(2) .componente-fundo-imagem:before {
   transition-delay: 0.1s;
-  background-image: url("../images/ic-css.jpg");
+  background-image: url("../img/barbacoa.jpg");
 }
 .componente:nth-child(3) {
   transform: translate3d(210.4166666667%, 0, 0);
@@ -312,7 +319,7 @@ body {
 }
 .componente:nth-child(3) .componente-fundo-imagem:before {
   transition-delay: 0.2s;
-  background-image: url("../images/ic-javascript.jpg");
+  background-image: url("../img/pejelagarto.jpeg");
 }
 .componente:nth-child(4) {
   transform: translate3d(315.625%, 0, 0);
@@ -329,7 +336,7 @@ body {
 }
 .componente:nth-child(4) .componente-fundo-imagem:before {
   transition-delay: 0.3s;
-  background-image: url("../images/ic-git.jpg");
+  background-image: url("../img/pozole_rojo-1.jpg");
 }
 .componente:nth-child(5) {
   transform: translate3d(420.8333333333%, 0, 0);
@@ -346,7 +353,7 @@ body {
 }
 .componente:nth-child(5) .componente-fundo-imagem:before {
   transition-delay: 0.4s;
-  background-image: url("../images/ic-react.jpg");
+  background-image: url("../img/Tlayuda.jpeg");
 }
 .componente:hover .componente-fundo-imagem:after {
   opacity: 0;
@@ -356,40 +363,6 @@ body {
   width: 100%;
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s, width 0.7s 0.7s, z-index 0s;
-}
-.componente:nth-child(6) {
-  transform: translate3d(450.625%, 0, 0);
-  transform-origin: 250.625% 50%;
-}
-.conteudo-geral.caixa--componente-ativo
-  .componente:nth-child(6):not(.caixa-conteudo-ativo) {
-  transform: scale(0.5) translate3d(315.625%, 0, 0);
-  opacity: 0;
-  transition: transform 0.95s, opacity 0.95s;
-}
-.componente:nth-child(6) .componente-interno {
-  transition-delay: 0.3s;
-}
-.componente:nth-child(6) .componente-fundo-imagem:before {
-  transition-delay: 0.3s;
-  background-image: url("../images/ic-git.jpg");
-}
-.componente:nth-child(7) {
-  transform: translate3d(315.625%, 0, 0);
-  transform-origin: 365.625% 50%;
-}
-.conteudo-geral.caixa--componente-ativo
-  .componente:nth-child(7):not(.caixa-conteudo-ativo) {
-  transform: scale(0.5) translate3d(315.625%, 0, 0);
-  opacity: 0;
-  transition: transform 0.95s, opacity 0.95s;
-}
-.componente:nth-child(7) .componente-interno {
-  transition-delay: 0.3s;
-}
-.componente:nth-child(7) .componente-fundo-imagem:before {
-  transition-delay: 0.3s;
-  background-image: url("../images/ic-git.jpg");
 }
 .componente.caixa-conteudo-ativo .componente-fundo-imagem {
   transform: translate3d(0, 0, 0);
@@ -406,35 +379,3 @@ body {
   }
 }
 
-.contenido-genr a{
-	position: fixed;
-	z-index: 99999;
-	text-decoration: none;
-	color: aqua;
-	font-size: 20px;
-}
-.contenido-genr a.next{
-	
-	right: 0%;
-	top: 50%;
-	transform:  translateY(-50%);
-	border: 2px dashed #053E5E;
-	padding: 10px 15px;
-	border-radius; 50%;
-	color:fuchsia;
-	font-weight: 700;
-	transition: 0.3s ease-in-out;
-	
-}
-.contenido-genr a.prev{
-	
-	left: 0%;
-	top: 50%;
-	transform:  translateY(-50%);
-	border: .2px dashed #053E5E;
-	padding: 10px 15px;
-	color:fuchsia;
-	font-weight: 700;
-	transition: 0.3s ease-in-out;
-	
-}
